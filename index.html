@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Quiz</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the quiz -->
+    <div id="quiz-container">
+        <!-- Authentication section: shown at the start -->
+        <div id="auth-section">
+            <h1>JavaScript Quiz </h1>
+            <p>Test your knowledge!</p>
+            <!-- Form for entering nickname -->
+            <form id="auth-form">
+                <input type="text" id="nickname" placeholder="Enter your nickname" required>
+                <button type="submit">Start Quiz</button>
+            </form>
+        </div>
+
+        <!-- Quiz section: hidden initially, shown during the quiz -->
+        <div id="quiz-section" style="display: none;">
+            <h2>Question <span id="question-number"></span></h2>
+            <!-- Container for dynamically loaded questions and answers -->
+            <div id="question-container"></div>
+            <!-- Next button: hidden initially, shown after answering -->
+            <button id="next-button" style="display: none;">Next Question</button>
+        </div>
+
+        <!-- Score section: hidden initially, shown at the end -->
+        <div id="score-section" style="display: none;">
+            <h2>Quiz Results</h2>
+            <!-- Container for the final score message -->
+            <p id="result-message"></p>
+            <!-- Button to restart the quiz -->
+            <button id="restart-button">Restart Quiz</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* Global body styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Main quiz container styles */
+#quiz-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Heading styles */
+h1, h2 {
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Paragraph styles */
+p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input and button shared styles */
+input, button {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Input focus styles */
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* General button styles */
+button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-image 0.3s ease;
+}
+
+/* Answer button styles */
+.answer-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.8rem;
+    text-align: left;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Answer button hover effect */
+.answer-button:hover {
+    background-color: #e9ecef;
+}
+
+/* Correct answer styles */
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+/* Incorrect answer styles */
+.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Score section styles */
+#score-section {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* Result message styles */
+#result-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Restart button gradient styles */
+#restart-button {
+    background-image: linear-gradient(to right, #FF6B6B, #FFE66D);
+}
+
+#restart-button:hover {
+    background-image: linear-gradient(to right, #FFE66D, #FF6B6B);
+}
+
+/* Next button gradient styles */
+#next-button {
+    background-image: linear-gradient(to right, #4ECDC4, #556270);
+}
+
+#next-button:hover {
+    background-image: linear-gradient(to right, #556270, #4ECDC4);
+}
+
+/* Start quiz button gradient styles */
+#auth-form button[type="submit"] {
+    background-image: linear-gradient(to right, #FF8C00, #FFA500);
+}
+
+#auth-form button[type="submit"]:hover {
+    background-image: linear-gradient(to right, #FFA500, #FF8C00);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    #quiz-container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
